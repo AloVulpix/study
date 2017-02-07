@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+	<div id="app">
+		<input type="text" v-model="child.str">
+		<span v-text="child.str">3</span>
+		<span>我是分割线</span>
+		<span v-text="child.str">2</span>
+	</div>
+<body>
+	<script src="Observer.js"></script>
+	<script>
+		let arr = []
+		function aaa(){
+			let inner = {
+				qq: 'a'
+			};
+			arr.push(inner);
+			return {
+				show: function(){
+					console.log(inner.qq)
+				},
+
+				closure: function(){
+					return inner;
+				}
+			}
+		}
+
+		let testinner = aaa();
+		testinner.show();
+
+	</script>
+</body>
+</html>

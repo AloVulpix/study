@@ -13,7 +13,7 @@
 
 */
 
-//这个是每个属性独有的dep实例，用来保存这个属性所对应的v-text的那些Watcher
+//这个是每个属性独有的dep，用来保存这个属性所对应的v-text的那些Watcher
 var uid = 0
 function Dep(){
 	this.id = uid++;

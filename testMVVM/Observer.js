@@ -8,7 +8,7 @@
 
 3、每当data修改，触发setter，通知这个属性对应的watcher修改其对应的html标签
 
-总结：observer对应js的data，watcher对应html的标签，通过发布者-订阅者模式，实现MVVM
+总结：observer对应js的data，watcher对应html的标签，通过观察者模式，实现MVVM
 	巧妙之处在于，注册watcher的时候，通过getter找到对应data属性的getter和setter
 
 */

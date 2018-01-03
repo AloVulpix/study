@@ -1,1 +1,1 @@
-## 结合koa起的server，对CORS简单使用
+## 结合koa起的server，对CORS，jsonp的简单使用

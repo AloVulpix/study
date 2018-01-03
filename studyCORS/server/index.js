@@ -1,13 +1,11 @@
 const path = require('path');
 const Koa = require('koa')
 const views = require('koa-views')
-const serve = require('koa-static')
 const Router = require('koa-router')
 const app = new Koa()
 const router = new Router()
 
 app.use(views(path.join(process.cwd(), '/views'), {extension: 'ejs'}))
-app.use(serve(path.join(process.cwd())))
 
 router.get('/', async(ctx, next) => {
 	await ctx.render('index')

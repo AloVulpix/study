@@ -1,0 +1,17 @@
+{
+  "name": "worrilessLake",
+  "version": "1.0.0",
+  "description": "MH's blog",
+  "scripts": {
+    "server": "node ./server/index.js"
+  },
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "koa": "^2.4.1",
+    "koa-router": "^7.3.0",
+    "koa-static": "^4.0.2",
+    "koa-views": "^6.1.3"
+  }
+}
